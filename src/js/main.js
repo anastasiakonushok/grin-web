@@ -13,6 +13,26 @@ $(function () {
 
   });
 
+  $(document).ready(function () {
+    $(function () {
+      //BEGIN
+      $(".accordion__title").on("click", function (e) {
+
+        e.preventDefault();
+        var $this = $(this);
+
+        if (!$this.hasClass("show-accordion")) {
+          $(".accordion__body").slideUp(400);
+          $(".accordion__title").removeClass("show-accordion");
+        }
+
+        $this.toggleClass("show-accordion");
+        $this.next().slideToggle();
+      });
+      //END
+
+    });
+  });
 
   $(document).ready(function () {
     $("img.imgsvg").each(function () {
