@@ -1,0 +1,105 @@
+extends layout/app
+
+block page 
+    include chunk/header
+
+    main.main
+        section.hero.hero-page(style='background-image: url("./img/bg-grodno-about.png");')
+            .container
+                .content 
+                    h1 Оператор ТВ и интернета в твоем городе
+                    p ООО "Гродненские информационные сети" предлагает Вам — как физическим, так и юридическим лицам — высокоскоростной доступ в глобальную компьютерную сеть Интернет.
+                    a(href="") Подробнее 
+                        span.icon.flex  
+                            svg(width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1 8H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M8.0001 3L13 8L8 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round") 
+        section.about-company 
+            .container 
+                h2 О нас
+                .flex.text-1.block-50 
+                    h3 ООО "Гродненские информационные сети"  предлагает Вам — как физическим, так и юридическим лицам — высокоскоростной доступ в глобальную компьютерную сеть Интернет.
+                .flex.text-2
+                    .block-50
+                    p ООО "Гродненские информационные сети"  предлагает Вам — как физическим, так и юридическим лицам — высокоскоростной доступ в глобальную компьютерную сеть Интернет.
+        section.section-link-info.documentation 
+            .container 
+                h2 Документы
+                ul.section-link-info__list
+                    li 
+                        a(href="" download).flex
+                            h3 Абоненских договор интернет
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M2.33333 1H21M21 1V19.6667M21 1L1 21" stroke="#163BA4" stroke-width="2")
+                    li 
+                        a(href="" download).flex
+                            h3 Абоненских договор интернет
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M2.33333 1H21M21 1V19.6667M21 1L1 21" stroke="#163BA4" stroke-width="2") 
+                    li 
+                        a(href="" download).flex
+                            h3 Абоненских договор интернет
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M2.33333 1H21M21 1V19.6667M21 1L1 21" stroke="#163BA4" stroke-width="2") 
+                    li 
+                        a(href="" download).flex
+                            h3 Абоненских договор интернет
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M2.33333 1H21M21 1V19.6667M21 1L1 21" stroke="#163BA4" stroke-width="2")
+        section.section-link-info
+            .container 
+                h2 Полезные ссылки
+                ul.section-link-info__list
+                    li 
+                        a(href="" target="_blank").flex
+                            h3 Абоненских договор интернет
+                    li 
+                        a(href="" target="_blank").flex
+                            h3 Абоненских договор интернет
+                    li 
+                        a(href="" target="_blank").flex
+                            h3 Абоненских договор интернет
+                    li 
+                        a(href="" target="_blank").flex
+                            h3 Абоненских договор интернет
+        section.certificates
+            .container
+                .flex.certificates__info
+                    h2 Сертификаты
+                    .certificates__nav.flex
+                        .swiper-certificates-prev
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" transform="rotate(-180 20 20)" stroke="#163BA4")
+                                path(d="M21.7803 25.0303C21.5141 25.2966 21.0974 25.3208 20.8038 25.1029L20.7197 25.0303L16.2197 20.5303C15.9534 20.2641 15.9292 19.8474 16.1471 19.5538L16.2197 19.4697L20.7197 14.9697C21.0126 14.6768 21.4874 14.6768 21.7803 14.9697C22.0466 15.2359 22.0708 15.6526 21.8529 15.9462L21.7803 16.0303L17.8107 20L21.7803 23.9697C22.0732 24.2626 22.0732 24.7374 21.7803 25.0303Z" fill="#163BA4")
+                        .swiper-certificates-next
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" stroke="#163BA4")
+                                path(d="M18.2197 14.9697C18.4859 14.7034 18.9026 14.6792 19.1962 14.8971L19.2803 14.9697L23.7803 19.4697C24.0466 19.7359 24.0708 20.1526 23.8529 20.4462L23.7803 20.5303L19.2803 25.0303C18.9874 25.3232 18.5126 25.3232 18.2197 25.0303C17.9534 24.7641 17.9292 24.3474 18.1471 24.0538L18.2197 23.9697L22.1893 20L18.2197 16.0303C17.9268 15.7374 17.9268 15.2626 18.2197 14.9697Z" fill="#163BA4")
+                .swiper.swiper-certificates
+                    .swiper-wrapper.swiper-certificates__wrapp
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="./img/certif1.png" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="./img/certif1.png" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="./img/certif1.png" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="./img/certif1.png" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="./img/certif1.png" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+                        .swiper-slide.swiper-certificates__slide.flex
+                            a(href="" data-fancybox="gallery")
+                                img(src="./img/certif1.png" alt="") 
+                            p Сертификат 1
+        include chunk/news
+    include chunk/footer

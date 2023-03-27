@@ -1,0 +1,125 @@
+.section-plus {
+    background: #fff;
+    padding: 60px 0px;
+
+    &__grid {
+        gap: 120px;
+    }
+
+    &__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 110%;
+            font-weight: 600;
+            color: var(--dark-color);
+            text-align: center;
+        }
+    }
+}
+
+.section-tariff {
+    padding-top: 80px;
+}
+
+.tariff-box {
+    padding: 30px 20px;
+    gap: 60px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
+    position: relative;
+
+    h3 {
+        @include h3;
+        color: var(--dark-color);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__price {
+        .price {
+            font-family: var(--title-font);
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 110%;
+            color: var(--main-blue);
+            margin-right: 10px;
+        }
+    }
+
+    &__info {
+        .internet {
+            gap: 16px;
+            margin-bottom: 16px;
+
+            .title {
+                @include regular;color:var(--dark-color);
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+
+        .tv {
+            gap: 16px;
+            margin-bottom: 16px;
+
+            .title {
+                @include regular;color:var(--dark-color);
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+
+        a {
+            @include regular;color:var(--main-blue);
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        a {
+            width: 100%;
+            @include button-arrow(#163BA4, var(--white-color), var(--main-blue));
+        }
+    }
+}
+
+
+.swiper-tariff {
+
+
+
+    &__info {
+        h2 {
+            @include h2;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .swiper-tariff-prev,
+        .swiper-tariff-next {
+            cursor: pointer;
+        }
+
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+}
