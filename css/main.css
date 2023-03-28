@@ -1127,6 +1127,26 @@ p {
   flex-direction: column;
 }
 
+.main-internet .reference {
+  margin-bottom: 80px;
+}
+
+.connection {
+  padding-top: 80px;
+}
+
+.connection h2 {
+  font-size: var(--h2-font);
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+}
+
+.connection img {
+  width: 100%;
+}
+
 .hero {
   position: relative;
   z-index: 10;
@@ -1814,6 +1834,16 @@ p {
 
 .tariff-box__btn a:active {
   background: #071334;
+}
+
+.swiper-tariff__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .swiper-tariff__info {
