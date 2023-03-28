@@ -1876,15 +1876,35 @@ p {
 
 .reference .accordion__body {
   display: none;
+  padding: 0px 20px 20px 20px;
+  color: var(--dark-color);
 }
 
 .reference .accordion__title {
   cursor: pointer;
 }
 
-.reference .accordion:not(:last-child) .accordion__title {
-  padding: 20px;
+.reference .accordion h3 {
+  font-size: var(--h3-font);
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.reference .accordion:not(:last-child) {
   border-bottom: 1px solid rgba(61, 61, 61, 0.212);
+}
+
+.reference .accordion:not(:last-child) .accordion__title {
+  padding: 20px 0px;
+}
+
+.reference .accordion:last-child .accordion__title {
+  padding-top: 20px;
+}
+
+.reference .accordion:last-child .accordion__body {
+  padding-top: 20px;
 }
 
 @supports (-webkit-appearance:none) {
