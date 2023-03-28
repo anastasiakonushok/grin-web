@@ -1,0 +1,12 @@
+.service-content {
+    padding: 80px 0px;
+    &__wrapp {
+        justify-content: space-between;
+    }
+    &__name {
+        width: 30%;
+    }
+    &__content {
+        width: calc(100% - 30% - 60px);
+    }
+}

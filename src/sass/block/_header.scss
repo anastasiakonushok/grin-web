@@ -259,7 +259,9 @@
         .nav {
             &__link {
                 padding-bottom: 80px;
-
+            }
+            &__link:hover {
+                color:var(--main-blue);
             }
         }
     }
