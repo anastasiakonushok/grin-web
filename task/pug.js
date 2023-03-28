@@ -1,4 +1,7 @@
-const { src, dest } = require("gulp");
+const {
+  src,
+  dest
+} = require("gulp");
 
 const path = require("../config/path.js");
 const app = require("../config/app.js");
@@ -22,4 +25,3 @@ const pug = () => {
 };
 
 module.exports = pug;
-

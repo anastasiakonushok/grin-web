@@ -1,0 +1,9 @@
+.main-tv {
+    .section-tv {
+        display: flex;
+        gap: 60px;
+    }
+    .tariff-box  {
+        width: calc(50% - 30px);
+    }
+}

@@ -13,7 +13,7 @@ module.exports = {
     pug : {
         src: pathSrc + "/pug/*.pug",
         watch: pathSrc + "/pug/**/*.pug",
-        dest: pathDest
+        dest: pathDest 
     },
     css : {
         src: pathSrc + "/css/*.css",
