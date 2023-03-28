@@ -104,9 +104,11 @@
 
 
 .swiper-tariff {
-
-
-
+    &__nav {
+        display: flex;
+        align-items:center;
+        gap: 16px;
+    }
     &__info {
         h2 {
             @include h2;

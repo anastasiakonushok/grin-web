@@ -1,0 +1,7 @@
+.main-internet .reference {
+  margin-bottom: 80px;
+}
+
+.connection h2 {
+  @inc;
+}
