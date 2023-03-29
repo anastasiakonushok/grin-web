@@ -1,23 +1,19 @@
 import $ from "jquery";
 $(function () {
-
-
   //Бургер меню
 
   $(document).ready(function () {
-    $('.burger-menu').click(function () {
-      $('.burger-menu').toggleClass('burger-menu-active');
-      $('.header-bottom').toggleClass('show');
-      $('body').toggleClass('body-lock');
+    $(".burger-menu").click(function () {
+      $(".burger-menu").toggleClass("burger-menu-active");
+      $(".header-bottom").toggleClass("show");
+      $("body").toggleClass("body-lock");
     });
-
   });
 
   $(document).ready(function () {
     $(function () {
       //BEGIN
       $(".accordion__title").on("click", function (e) {
-
         e.preventDefault();
         var $this = $(this);
 
@@ -30,7 +26,6 @@ $(function () {
         $this.next().slideToggle();
       });
       //END
-
     });
   });
 
@@ -65,7 +60,6 @@ $(function () {
   });
 });
 
-
 const swiper = new Swiper(".swiper-main", {
   // Optional parameters
   loop: true,
@@ -89,7 +83,7 @@ const swiperNews = new Swiper(".swiper-news", {
   spaceBetween: 16,
   navigation: {
     nextEl: ".swiper-news-next",
-    prevEl: ".swiper-news-prev"
+    prevEl: ".swiper-news-prev",
   },
   pagination: {
     el: ".swiper-news-pagination",
@@ -117,7 +111,7 @@ const swiperTariff = new Swiper(".swiper-tariff", {
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-tariff-next",
-    prevEl: ".swiper-tariff-prev"
+    prevEl: ".swiper-tariff-prev",
   },
   // autoplay: {
   //   delay: 3000,
@@ -140,7 +134,7 @@ const swiperCertificates = new Swiper(".swiper-certificates", {
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-certificates-next",
-    prevEl: ".swiper-certificates-prev"
+    prevEl: ".swiper-certificates-prev",
   },
   // autoplay: {
   //   delay: 3000,
