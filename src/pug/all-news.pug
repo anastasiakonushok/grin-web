@@ -1,0 +1,71 @@
+extends layout/app
+
+block page 
+    include chunk/header
+
+    main.main
+        section.hero.hero-page(style='background-image: url("./img/popular-tv.jpg");')
+            .container
+                .content 
+                    h1 
+                        | Новости
+                    p ООО "Гродненские информационные сети" предлагает Вам — как физическим, так и юридическим лицам — высокоскоростной доступ в глобальную компьютерную сеть Интернет.
+        section.section-all-news.p-80 
+            .container.section-all-news__container.grid-4
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit                
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit
+                a(href="./news-single-page.html").news-single
+                    .news-single__img
+                        img(src="./img/main-bg.jpg" alt="")
+                    .news-single__content
+                        .info
+                            span 25 января
+                        h3 Новость 1
+                        p Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit                
+    include chunk/footer

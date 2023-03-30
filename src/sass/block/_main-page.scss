@@ -413,7 +413,9 @@
 
 @include mq(tablet, max) {
     .about {
-
+        &__content {
+            width: 100%;
+        }
         &__advantages {
             flex-wrap: wrap;
             gap: 30px;
@@ -427,7 +429,7 @@
     .popular {
         .popular-card {
             &__box {
-                padding: 20px;
+                padding: 30px;
                 p {
                     width: 100%;
                 }

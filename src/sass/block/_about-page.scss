@@ -1,151 +1,150 @@
 .about-company {
-    background: #fff;
-    padding: 80px 0px;
+  background: #fff;
+  padding: 80px 0px;
 
-    h2 {
-        @include h2;
-        color: var(--dark-color);
-        margin-bottom: 30px;
-    }
+  h2 {
+    @include h2;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+  }
 
-    h3 {
-        @include h3;
-        color: var(--dark-color);
-    }
+  h3 {
+    @include h3;
+    color: var(--dark-color);
+  }
 
-    .block-50 {
-        display: block;
-        width: 50%;
-    }
+  .block-50 {
+    display: block;
+    width: 50%;
+  }
 
-    .text-1 {
-        margin-bottom: 30px;
-    }
+  .text-1 {
+    margin-bottom: 30px;
+  }
 
-    .text-2 {
-        p {
-            width: 50%;
-        }
+  .text-2 {
+    p {
+      width: 50%;
     }
+  }
 }
 
 .section-link-info {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 
-    &__list {
-        display: grid;
-        column-gap: 60px;
-        row-gap: 30px;
-        grid-template-columns: 1fr 1fr;
+  &__list {
+    display: grid;
+    column-gap: 60px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
 
-        a {
-            justify-content: space-between;
-            align-items: center;
-        }
+    a {
+      justify-content: space-between;
+      align-items: center;
     }
+  }
 
-    h2 {
-        @include h2;
-        color: var(--dark-color);
-        margin-bottom: 30px;
-    }
+  h2 {
+    @include h2;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+  }
 
-    h3 {
-        @include h3;
-        color: var(--dark-color);
-    }
+  h3 {
+    @include h3;
+    color: var(--dark-color);
+  }
 }
 
 .documentation {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .certificates {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 
-    h2 {
-        @include h2;
-        color: var(--dark-color);
-        margin-bottom: 30px;
-    }
+  h2 {
+    @include h2;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+  }
 
-    &__info {
-        justify-content: space-between;
-    }
+  &__info {
+    justify-content: space-between;
+  }
 
-    &__nav {
-        gap: 16px;
-        justify-content: space-between;
-    }
+  &__nav {
+    gap: 16px;
+    justify-content: space-between;
+  }
 
-    .swiper-certificates-next,
-    .swiper-certificates-prev {
-        cursor: pointer;
-    }
+  .swiper-certificates-next,
+  .swiper-certificates-prev {
+    cursor: pointer;
+  }
 
-    .swiper-certificates {
-        &__slide {
-            gap: 16px;
-            flex-direction: column;
-            align-items: center;
-            background: #fff;
-            padding: 30px;
+  .swiper-certificates {
+    &__slide {
+      gap: 16px;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      padding: 30px;
 
-            &:hover {
-                background: var(--main-blue);
+      &:hover {
+        background: var(--main-blue);
 
-                p {
-                    color: #fff;
-                }
-            }
-
-            p {
-                @include regular;
-                color:var(--dark-color);
-                font-size: 18px;
-                line-height: 120%;
-                font-weight: 600;
-                text-align: center;
-            }
+        p {
+          color: #fff;
         }
-    }
+      }
 
+      p {
+        @include regular;
+        color: var(--dark-color);
+        font-size: 18px;
+        line-height: 120%;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @include mq(tablet-wide, max) {
-    .hero-page {
-        .content {
-            max-width: 80%;
-        }
+  .hero-page {
+    .content {
+      max-width: 80%;
+    }
+  }
+
+  .section-link-info {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .about-company {
+    .block-50 {
+      width: 100%;
     }
 
-    .section-link-info {
-        &__list {
-            grid-template-columns: 1fr;
-        }
+    .text-2 {
+      .block-50 {
+        display: none;
+      }
+
+      p {
+        width: 100%;
+      }
     }
-
-    .about-company {
-        .block-50 {
-            width: 100%;
-        }
-
-        .text-2 {
-            .block-50 {
-                display: none;
-            }
-
-            p {
-                width: 100%;
-            }
-        }
-    }
+  }
 }
 
 @include mq(tablet, max) {
-    .hero-page {
-        .content {
-            max-width: 100%;
-        }
+  .hero-page {
+    .content {
+      max-width: 100%;
     }
+  }
 }

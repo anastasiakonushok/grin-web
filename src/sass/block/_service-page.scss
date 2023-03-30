@@ -128,3 +128,16 @@
 .service-link {
   background: #fff;
 }
+@include mq(tablet, max) {
+  .section-plus {
+    &__grid {
+      gap: 30px;
+    }
+    &__box {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+

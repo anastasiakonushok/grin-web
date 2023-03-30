@@ -162,15 +162,17 @@
     .burger-menu-active {
         span:nth-child(1) {
             transform: rotate(45deg);
+
         }
 
         span:nth-child(2) {
             display: none;
-            ;
         }
 
         span:nth-child(3) {
             transform: rotate(-45deg);
+            position: relative;
+            top:-7px;
         }
     }
 
