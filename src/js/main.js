@@ -122,6 +122,9 @@ const swiperTariff = new Swiper(".swiper-tariff", {
       slidesPerView: 1,
     },
     650: {
+      slidesPerView: 2,
+    },
+    900: {
       slidesPerView: 3,
     },
     1170: {
