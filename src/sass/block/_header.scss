@@ -2,8 +2,13 @@
     background: var(--white-color);
     // position: absolute;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0px;
+    left: 0px;
     z-index: 100;
+}
+.header_down {
+    top: -105px;
 }
 
 .header-top {

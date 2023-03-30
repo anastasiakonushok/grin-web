@@ -848,7 +848,6 @@ p {
 
 .discount {
   padding: 80px 0;
-  background: #fff;
 }
 
 .discount h2 {
@@ -891,6 +890,7 @@ p {
   -webkit-box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
   box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
   position: relative;
+  background: #fff;
 }
 
 .discount__img {
@@ -992,8 +992,14 @@ p {
 .header {
   background: var(--white-color);
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0px;
+  left: 0px;
   z-index: 100;
+}
+
+.header_down {
+  top: -105px;
 }
 
 .header-top {
@@ -2228,10 +2234,17 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 60px;
+  padding: 20px 0;
 }
 
-.main-tv .tariff-box {
+.main-tv .section-tv .tariff-box {
   width: calc(50% - 30px);
+  -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+  box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+}
+
+.main-tv .section-tv .tariff-box__btn {
+  width: 50%;
 }
 
 .setcion-popular-film h2 {
@@ -2346,6 +2359,14 @@ p {
   }
 
   .swiper-tariff__slide:hover {
+    -webkit-box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
+    box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+  }
+
+  .section-tv .tariff-box:hover {
     -webkit-box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
     box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
     -webkit-transform: scale(1.025);
