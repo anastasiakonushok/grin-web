@@ -320,6 +320,14 @@
             }
         }
     }
+    .popular-card {
+        &__box:hover {
+            img {
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+            }
+        }
+    }
 
     .about {
         &::before {

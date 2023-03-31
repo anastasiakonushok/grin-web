@@ -8,12 +8,7 @@
     z-index: 100;
     transition: all 0.3s ease-in-out;
 }
-.header_down {
-    top: -200px;
-}
-.header_up {
-    box-shadow: 0 6px 8px 0 rgba(83,83,83,.13);
-}
+
 .header-top {
     padding: 8px 0px;
 
@@ -234,6 +229,12 @@
 }
 
 @include mq(tablet-wide, min) {
+    .header_down {
+        top: -200px;
+    }
+    .header_up {
+        box-shadow: 0 6px 8px 0 rgba(83,83,83,.13);
+    }
     .nav__item:hover>.sub-menu {
         display: block;
     }

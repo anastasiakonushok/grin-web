@@ -50,3 +50,10 @@
     }
 
 }
+@include mq(tablet, max) {
+    .discount {
+        &__boxes {
+            grid-template-columns: 1fr;
+        }
+    }
+}
