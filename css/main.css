@@ -960,6 +960,7 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .footer .nav-footer ul {
@@ -981,12 +982,22 @@ p {
 }
 
 .footer__copyright {
-  padding-top: 25px;
+  padding-top: 60px;
   text-align: center;
 }
 
 .footer__copyright p {
   font-size: 14px;
+}
+
+.button-up {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  padding: 16px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(68, 68, 68, 0.212);
+  box-shadow: 0 6px 10px 0 rgba(68, 68, 68, 0.212);
 }
 
 .header {
@@ -999,7 +1010,7 @@ p {
 }
 
 .header_down {
-  top: -105px;
+  top: -200px;
 }
 
 .header-top {
@@ -2293,6 +2304,22 @@ p {
   .service-content-img__content li:before {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='12' viewBox='0 0 15 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.67828' y1='5.7652' x2='6.09495' y2='10.7652' stroke='%23163BA4' stroke-width='2'/%3E%3Cline x1='4.69452' y1='10.8081' x2='14.2778' y2='0.808094' stroke='%23163BA4' stroke-width='2'/%3E%3C/svg%3E%0A");
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .button-up.scroll-top_up {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1000;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
 }
 
 @media only screen and (min-width: 1024px) {
