@@ -46,6 +46,7 @@
 
     &__wrapp {
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     .nav-footer {
@@ -56,18 +57,27 @@
         }
 
         a {
-            @include regular;color:var(--white-color);
+            @include regular;
+            color: var(--white-color);
         }
     }
 
     &__copyright {
-        padding-top: 25px;
+        padding-top: 60px;
         text-align: center;
 
         p {
             font-size: 14px;
         }
     }
+}
+.button-up {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    padding: 16px 20px;
+    background: #fff;
+    box-shadow: 0 6px 10px 0 rgba(68, 68, 68, 0.212);
 }
 
 @include mq(tablet-wide, max) {
@@ -87,7 +97,7 @@
 }
 
 @include mq(tablet, max) {
-    .footer { 
+    .footer {
         &__wrapp {
             flex-wrap: wrap;
             flex-direction: column;
@@ -99,5 +109,15 @@
         .contact-2 {
             width: 100%;
         }
+    }
+}
+
+@include mq(tablet, min) {
+    .button-up.scroll-top_up {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 1000;
+        transition: all 0.5s ease-in-out;
     }
 }
