@@ -1,4 +1,3 @@
-
 .hero {
     position: relative;
     z-index: 10;
@@ -63,7 +62,11 @@
             }
 
             a {
-                @include button-arrow(transparent, var(--white-color), var(--white-color));
+                @include button-arrow(
+                    transparent,
+                    var(--white-color),
+                    var(--white-color)
+                );
 
                 .icon {
                     align-items: center;
@@ -95,7 +98,12 @@
             height: 100%;
             position: absolute;
             display: block;
-            background: linear-gradient(90.7deg, rgba(6, 2, 27, 0.53) 21.17%, rgba(19, 7, 91, 0.04) 44.04%, rgba(217, 217, 217, 0) 57.56%);
+            background: linear-gradient(
+                90.7deg,
+                rgba(6, 2, 27, 0.53) 21.17%,
+                rgba(19, 7, 91, 0.04) 44.04%,
+                rgba(217, 217, 217, 0) 57.56%
+            );
         }
     }
 }
@@ -123,7 +131,11 @@
         }
 
         a {
-            @include button-arrow(transparent, var(--main-blue), var(--main-blue));
+            @include button-arrow(
+                transparent,
+                var(--main-blue),
+                var(--main-blue)
+            );
 
             svg {
                 path {
@@ -182,13 +194,13 @@
         gap: 10px;
 
         p {
-            @include regular;color:var(--dark-color);
+            @include regular;
+            color: var(--dark-color);
             font-size: 18px;
             line-height: 120%;
             font-weight: 600;
             text-align: center;
             display: flex;
-
 
             min-height: 70px;
         }
@@ -216,15 +228,12 @@
     }
 
     .logo-wrapp {
-
         overflow: hidden;
-
     }
 
     .logo-loop {
         animation: ticker-kf 18s linear infinite;
     }
-
 }
 
 .popular {
@@ -235,7 +244,7 @@
 
     .popular-card {
         &__box {
-            width: calc(100%/3);
+            width: calc(100% / 3);
             position: relative;
             overflow: hidden;
             padding: 60px;
@@ -255,7 +264,11 @@
             }
 
             .btn {
-                @include button-arrow(transparent, var(--white-color), var(--white-color));
+                @include button-arrow(
+                    transparent,
+                    var(--white-color),
+                    var(--white-color)
+                );
             }
         }
 
@@ -284,17 +297,35 @@
             left: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient(180deg, rgba(4, 10, 30, 0.576) 59.97%, rgba(9, 20, 53, 0.208) 93.84%);
+            background: linear-gradient(
+                180deg,
+                rgba(4, 10, 30, 0.576) 59.97%,
+                rgba(9, 20, 53, 0.208) 93.84%
+            );
             backdrop-filter: blur(2.5px);
         }
     }
 }
 
 @include mq(tablet-wide, min) {
+    .services {
+        &__item:hover {
+            img {
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+            }
+            p {
+                color: var(--main-blue);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
     .about {
         &::before {
-            background: url('../img/about-vector.svg') no-repeat center right fixed;
-            content: '';
+            background: url("../img/about-vector.svg") no-repeat center right
+                fixed;
+            content: "";
             display: block;
             top: 0;
             left: 0;
@@ -361,8 +392,8 @@
         .popular-card {
             &__box {
                 padding: 30px;
-                gap:60px;
-                align-items:flex-start;
+                gap: 60px;
+                align-items: flex-start;
                 h2 {
                     text-align: start;
                 }
@@ -377,6 +408,7 @@
 
 @include mq(tablet-small, max) {
     .hero {
+        background-position: 80% 20%;
         .swiper-main {
             &__content {
                 max-width: 100%;
@@ -385,6 +417,13 @@
                     width: 100%;
                 }
             }
+        }
+        &::after {
+            background: linear-gradient(
+                89.77deg,
+                rgba(1, 0, 4, 0.4745) 12.98%,
+                rgba(14, 16, 53, 0.0585) 96.66%
+            );
         }
     }
 
