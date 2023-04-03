@@ -2266,7 +2266,7 @@ p {
   font-size: var(--h3-font);
   line-height: 110%;
   font-weight: 700;
-  color: car(--dark-color);
+  color: var(--dark-color);
   margin-bottom: 16px;
 }
 
@@ -2280,6 +2280,60 @@ p {
 
 .services-box__wrapp {
   gap: 30px;
+}
+
+.section-stages {
+  background: #fff;
+}
+
+.section-stages h2 {
+  font-size: var(--h2-font);
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 60px;
+}
+
+.section-stages__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.section-stages__box {
+  position: relative;
+}
+
+.section-stages__box .number {
+  position: absolute;
+  font-size: 98px;
+  font-weight: 900;
+  z-index: 1;
+  top: -30px;
+  color: rgb(218, 218, 218);
+  z-index: 1;
+}
+
+.section-stages__box .content {
+  position: relative;
+  z-index: 10;
+}
+
+.section-stages__box h3 {
+  font-size: var(--h3-font);
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+.section-stages__box--arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .main-tv .section-tv {
@@ -2822,6 +2876,13 @@ p {
 
   .service-contact__box {
     width: 100%;
+  }
+
+  .services-box__wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .main-tv .section-tv {
