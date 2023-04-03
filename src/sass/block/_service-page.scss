@@ -250,4 +250,14 @@
             flex-direction: column;
         }
     }
+    .section-stages {
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        &__box--arrow {
+            display: none;
+        }
+    }
 }

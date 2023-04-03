@@ -4,7 +4,7 @@ block page
     include chunk/header
 
     main.main
-        section.hero.hero-page(style='background-image: url("./img/solar-panel-bg.png");')
+        section.hero.hero-page(style='background-image: url("./img/solar-panel.jpg");')
             .container
                 .content 
                     h1 Альтернативная энергетика
@@ -42,7 +42,7 @@ block page
             .container
                 .service-content-img__wrapp.flex
                     .service-content-img__img
-                        img(src="./img/solar-panel.jpg" alt="" height="450")
+                        img(src="./img/solar-panel-bg.png" alt="")
                     .service-content-img__content
                         h3 Приемущества солнечных батарей:
                         ul 
@@ -53,6 +53,25 @@ block page
                             li Надежность. Солнечная система гарантированно вырабатывает электроэнергию каждый день от восхода до заката. Производительность снижается в пасмурную погоду, но все же солнечные панели дают электроэнергию и в этом случае.
                             li Общедоступность. Солнечный свет есть практически везде и это в некоторых случаях критическое преимущество солнечных панелей перед ветряными и дизельными системами. Особенности рельефа, застройки, метеорологических особенностей, размера участка, могут не позволить разместить ветряк, а вот для солнечных систем ограничений гораздо меньше.
                             li Возможность произвольного изменения мощности системы. У жидкотопливных и ветряных систем мощность фиксированная. А вот у солнечных систем это величина произвольная.
+        section.services-box.p-80
+            .container 
+                h2 Наши проекты
+                .services-box__wrapp.flex   
+                    .service-box
+                        img(src="./img/extinguisher-img.jpg" alt="")
+                        .service-box__content 
+                            h3 Проектирование пожарной системы
+                            p г. Гродно, ул. Вишневецкая, 1 (здание станции технического обслуживания «Автоцентр «Флагман»).
+                    .service-box
+                        img(src="./img/camera-img.jpg" alt="")
+                        .service-box__content 
+                            h3 Проектирование охранной системы
+                            p г. Гродно, ул. Вишневецкая, 1 (здание станции технического обслуживания «Автоцентр «Флагман»).
+                    .service-box
+                        img(src="./img/provoda-img.jpg" alt="")
+                        .service-box__content 
+                            h3 Проектирование электроснабжения 
+                            p г. Гродно, ул. Вишневецкая, 1 (здание станции технического обслуживания «Автоцентр «Флагман»).
         section.service-contact(style='background-image: url("./img/seti-bg.jpg");')
             .container.service-contact__container
                 .service-contact__box 
