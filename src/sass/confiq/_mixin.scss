@@ -143,3 +143,10 @@ $breakpoints: ("phone": 400px,
     }
 
 }
+
+@mixin hover {
+    &:hover {
+        transition: all 0.3s ease;
+        @content;
+    }
+}

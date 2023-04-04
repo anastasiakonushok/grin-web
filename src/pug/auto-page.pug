@@ -1,0 +1,119 @@
+extends layout/app
+
+block page 
+    include chunk/header
+
+    main.main
+        section.hero.hero-page(style='background-image: url("./img/car-bg.jpg");')
+            .container
+                .content 
+                    h1 Электрозарядные станции для авто
+                    p Установим стационарную электрозарядную станцию в вашем дворе. Заряжай электромобиль быстро и безопасно у себя во дворе!
+                    a(href="./contact.html") Контакты
+                        span.icon.flex  
+                            svg(width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1 8H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M8.0001 3L13 8L8 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")                    
+        section.section-plus
+            .container.section-plus__container 
+                .grid-4.section-plus__grid
+                    .flex.section-plus__box
+                        img(src="./img/tools-icon.svg" alt="")
+                        p Собственное производство
+                    .flex.section-plus__box
+                        img(src="./img/service-icon.svg" alt="")
+                        p Сервисное обслуживание
+                    .flex.section-plus__box
+                        img(src="./img/led-icon.svg" alt="")
+                        p Эффективное и яркое решение для вашей рекламы 
+                    .flex.section-plus__box
+                        img(src="./img/safty-data-icon.svg" alt="")
+                        p Гарантия и качество 
+        section.service-content.p-80 
+            .container
+                .service-content__wrapp.flex
+                    .service-content__name 
+                        h2.title-line О услуге
+                    .service-content__content.inner-content 
+                        p Наши специалисты ежегодно повышают квалификацию и имеют многолетний практический опыт. Это позволяет нам находить индивидуальный подход к каждому объекту и выполнять электромонтажные работы в Гродно и Гродненской области качественно в строго установленные сроки.
+                        h4 Виды работ:
+                        ul 
+                            li проложат силовые, телефонные, телевизионные кабели и провода, а также локальных сетей;
+                            li соберут электрический щит любой сложности;
+        section.service-content-img
+            .container
+                .service-content-img__wrapp.flex
+                    .service-content-img__img
+                        img(src="./img/air-img.png" alt="")
+                    .service-content-img__content
+                        h3 Приемущества солнечных батарей:
+                        ul 
+                            li Не требует топлива. Использование энергии солнца требует затрат практически только на установку. В дальнейшем потребитель получает уже бесплатную энергию.
+                            li Работает постоянно. Солнечная система регулируется автоматически. Ее не нужно постоянно включать и выключать как дизель. 
+        section.section-auto.m-t-80
+            .container 
+                .section-auto__info.flex
+                    h2 Наши электрозарядные станции
+                    .section-auto__nav.flex
+                        .swiper-auto-prev
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" transform="rotate(-180 20 20)" stroke="#163BA4")
+                                path(d="M21.7803 25.0303C21.5141 25.2966 21.0974 25.3208 20.8038 25.1029L20.7197 25.0303L16.2197 20.5303C15.9534 20.2641 15.9292 19.8474 16.1471 19.5538L16.2197 19.4697L20.7197 14.9697C21.0126 14.6768 21.4874 14.6768 21.7803 14.9697C22.0466 15.2359 22.0708 15.6526 21.8529 15.9462L21.7803 16.0303L17.8107 20L21.7803 23.9697C22.0732 24.2626 22.0732 24.7374 21.7803 25.0303Z" fill="#163BA4")
+                        .swiper-auto-next
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" stroke="#163BA4")
+                                path(d="M18.2197 14.9697C18.4859 14.7034 18.9026 14.6792 19.1962 14.8971L19.2803 14.9697L23.7803 19.4697C24.0466 19.7359 24.0708 20.1526 23.8529 20.4462L23.7803 20.5303L19.2803 25.0303C18.9874 25.3232 18.5126 25.3232 18.2197 25.0303C17.9534 24.7641 17.9292 24.3474 18.1471 24.0538L18.2197 23.9697L22.1893 20L18.2197 16.0303C17.9268 15.7374 17.9268 15.2626 18.2197 14.9697Z" fill="#163BA4")
+                .swiper.swiper-auto
+                    .swiper-wrapper.swiper-auto__wrapp
+                        .swiper-slide.swiper-auto__slide
+                            .service-box
+                                img(src="./img/main-bg.jpg" alt="")
+                                .service-box__content 
+                                    h3 Адрес
+                                    p Южная 
+                                    h3 Стоимость
+                                    p 3 руб
+                        .swiper-slide.swiper-auto__slide
+                            .service-box
+                                img(src="./img/main-bg.jpg" alt="")
+                                .service-box__content 
+                                    h3 Адрес
+                                    p Южная
+                                    h3 Стоимость
+                                    p 3 руб 
+                        .swiper-slide.swiper-auto__slide
+                            .service-box
+                                img(src="./img/main-bg.jpg" alt="")
+                                .service-box__content 
+                                    h3 Адрес
+                                    p Гая
+                                    h3 Стоимость
+                                    p 3 руб 
+                        .swiper-slide.swiper-auto__slide
+                            .service-box
+                                img(src="./img/main-bg.jpg" alt="")
+                                .service-box__content 
+                                    h3 Адрес
+                                    p Гая
+                                    h3 Стоимость
+                                    p 3 руб 
+                        .swiper-slide.swiper-auto__slide
+                            .service-box
+                                img(src="./img/main-bg.jpg" alt="")
+                                .service-box__content 
+                                    h3 Адрес
+                                    p Южная
+                                    h3 Стоимость
+                                    p 3 руб 
+        section.service-contact(style='background-image: url("./img/seti-bg.jpg");')
+            .container.service-contact__container
+                .service-contact__box 
+                    p Выполним акт обследования на подключение средств системы видеонаблюдения согласно полученных технических условий. При разработке учитываем бюджет заказчика и подбираем оптимальное по стоимости оборудование.
+                    br
+                    p Мы ставим себе цель найти наиболее оптимальное решение задачи клиента!
+                    a(href="./contact.html").hover-link-white Контакты
+                        span.icon.flex  
+                            svg(width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M1 8H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M8.0001 3L13 8L8 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")       
+    include chunk/footer

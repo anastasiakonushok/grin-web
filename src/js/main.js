@@ -152,6 +152,31 @@ const swiperNews = new Swiper(".swiper-news", {
     },
 });
 //
+const swiperAuto = new Swiper(".swiper-auto", {
+    // Optional parameters
+    // loop: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".swiper-auto-next",
+        prevEl: ".swiper-auto-prev",
+    },
+    // autoplay: {
+    //     delay: 3000,
+    // },
+    breakpoints: {
+        // when window width is >= 320px
+        350: {
+            slidesPerView: 1,
+        },
+        650: {
+            slidesPerView: 3,
+        },
+        1170: {
+            slidesPerView: 3,
+        },
+    },
+});
+//
 const swiperTariff = new Swiper(".swiper-tariff", {
     // Optional parameters
     spaceBetween: 30,

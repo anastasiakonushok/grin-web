@@ -10,7 +10,6 @@
     outline-offset: 0;
 }
 
-
 // ::selection {
 //     color: none;
 //     background: none;
@@ -72,28 +71,27 @@ button {
 }
 
 h1 {
-    @include h1
+    @include h1;
 }
 
 h2 {
-    @include h2
+    @include h2;
 }
 
 h3 {
-    @include h3
+    @include h3;
 }
 
 p {
     @include regular;
 }
 
-
 .hero {
     display: flex;
-    align-items:center;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .content {
         position: relative;
         z-index: 100;
@@ -112,7 +110,11 @@ p {
         }
 
         a {
-            @include button-arrow(transparent, var(--white-color), var(--white-color));
+            @include button-arrow(
+                transparent,
+                var(--white-color),
+                var(--white-color)
+            );
 
             .icon {
                 align-items: center;
@@ -120,18 +122,23 @@ p {
         }
     }
 }
-
+@include mq(tablet, min) {
+    .hover-link-white {
+        @include hover {
+            background: rgba(189, 189, 189, 0.315) !important;
+        }
+    }
+}
 .body-lock {
     overflow-y: hidden;
 }
 
 .hero-page {
     position: relative;
-
 }
 
 .hero-page::after {
-    content:"";
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -140,7 +147,12 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(89.77deg, rgba(1, 0, 4, 0.4745) 12.57%, rgba(8, 9, 31, 0.4225) 26.14%, rgba(14, 16, 53, 0.0585) 43.56%);
+    background: linear-gradient(
+        89.77deg,
+        rgba(1, 0, 4, 0.4745) 12.57%,
+        rgba(8, 9, 31, 0.4225) 26.14%,
+        rgba(14, 16, 53, 0.0585) 43.56%
+    );
 }
 
 .grid-4 {
@@ -160,15 +172,20 @@ p {
 
 .title-line {
     @include h2;
-    color:var(--dark-color);
+    color: var(--dark-color);
     padding-left: 16px;
     border-left: 2px solid var(--main-blue);
 }
 
 .inner-content {
     p {
-        color:var(--dark-color);
+        color: var(--dark-color);
         padding-bottom: 16px;
+    }
+    h4 {
+        @include regular;
+        color: var(--dark-color);
+        margin-bottom: 10px;
     }
     ul {
         list-style: disc;
@@ -176,7 +193,7 @@ p {
 
         li {
             @include regular;
-            color:var(--dark-color);
+            color: var(--dark-color);
             margin-bottom: 8px;
         }
     }

@@ -647,6 +647,14 @@ p {
   padding-bottom: 16px;
 }
 
+.inner-content h4 {
+  font-size: var(--regular-font);
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+
 .inner-content ul {
   list-style: disc;
   padding-left: 20px;
@@ -1205,6 +1213,10 @@ p {
   z-index: 10;
   height: calc(100vh - 115px);
   width: 100vw;
+}
+
+.hero .container {
+  width: 100%;
 }
 
 .hero .swiper-main {
@@ -2412,6 +2424,27 @@ p {
   border-top: 1px solid rgb(185, 182, 182);
 }
 
+.section-auto h2 {
+  font-size: var(--h2-font);
+  line-height: 110%;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.section-auto__info {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.section-auto__nav {
+  gap: 16px;
+}
+
+.section-auto .swiper-auto {
+  padding: 30px 0px 80px 0px;
+}
+
 .main-tv .section-tv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2487,6 +2520,13 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .hover-link-white:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(189, 189, 189, 0.315) !important;
+  }
+
   .button-up.scroll-top_up {
     position: fixed;
     right: 16px;
