@@ -19,8 +19,8 @@
 
     &__logo {
         img {
-            height: 35px;
-            width: 140px;
+            height: 45px;
+            // width: 140px;
         }
     }
 
@@ -34,7 +34,8 @@
         }
 
         a {
-            @include regular;color:var(--main-blue);
+            @include regular;
+            color: var(--main-blue);
             font-weight: 500;
         }
     }
@@ -50,7 +51,8 @@
         }
 
         .text {
-            @include regular;color:var(--main-blue);
+            @include regular;
+            color: var(--main-blue);
             font-weight: 500;
         }
     }
@@ -59,7 +61,8 @@
         gap: 10px;
 
         a {
-            @include regular;color:var(--dark-color);
+            @include regular;
+            color: var(--dark-color);
             font-weight: 500;
         }
     }
@@ -102,17 +105,14 @@
         }
 
         &__link {
-            @include regular;color:var(--dark-color);
+            @include regular;
+            color: var(--dark-color);
             font-weight: 500;
             padding-right: 20px;
             z-index: 100;
-
         }
     }
-
 }
-
-
 
 @include mq(tablet-wide, max) {
     .header-bottom {
@@ -134,7 +134,6 @@
 
             &__link {
                 font-size: 24px;
-
             }
         }
     }
@@ -165,7 +164,6 @@
     .burger-menu-active {
         span:nth-child(1) {
             transform: rotate(45deg);
-
         }
 
         span:nth-child(2) {
@@ -175,11 +173,11 @@
         span:nth-child(3) {
             transform: rotate(-45deg);
             position: relative;
-            top:-7px;
+            top: -7px;
         }
     }
 
-    .nav__item:hover>.sub-menu {
+    .nav__item:hover > .sub-menu {
         display: block;
     }
 
@@ -199,7 +197,6 @@
                 width: 100%;
                 display: block;
             }
-
         }
 
         li:not(:last-child) {
@@ -213,7 +210,7 @@
         }
 
         .menu-item-has-children::after {
-            content: '';
+            content: "";
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='27' height='14' viewBox='0 0 27 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.4351 1.26306C27.1198 1.83997 27.1821 2.74274 26.6219 3.3789L26.4351 3.56116L14.8637 13.3112C14.179 13.8881 13.1076 13.9405 12.3526 13.4685L12.1363 13.3112L0.564864 3.56116C-0.18829 2.92656 -0.18829 1.89766 0.564864 1.26306C1.24955 0.68615 2.32097 0.633704 3.07597 1.10572L3.29227 1.26306L13.5 9.86401L23.7077 1.26306C24.4609 0.628459 25.682 0.628459 26.4351 1.26306Z' fill='%23353030'/%3E%3C/svg%3E");
             height: 12px;
             width: 25px;
@@ -233,9 +230,9 @@
         top: -200px;
     }
     .header_up {
-        box-shadow: 0 6px 8px 0 rgba(83,83,83,.13);
+        box-shadow: 0 6px 8px 0 rgba(83, 83, 83, 0.13);
     }
-    .nav__item:hover>.sub-menu {
+    .nav__item:hover > .sub-menu {
         display: block;
     }
 
@@ -272,7 +269,7 @@
                 padding-bottom: 80px;
             }
             &__link:hover {
-                color:var(--main-blue);
+                color: var(--main-blue);
             }
         }
     }
