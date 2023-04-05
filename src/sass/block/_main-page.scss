@@ -328,6 +328,10 @@
                 transform: scale(1.1);
                 transition: all 0.3s ease;
             }
+            .btn {
+                background: rgba(189, 189, 189, 0.315) !important;
+                transition: all 0.3s ease;
+            }
         }
     }
 
@@ -351,10 +355,10 @@
 
 @include mq(tablet-wide, max) {
     .hero-404 {
-        height: calc(100vh - 78px);
+        height: calc(100vh - 88px);
     }
     .hero {
-        height: calc(100vh - 78px);
+        height: calc(100vh - 88px);
 
         .swiper-main {
             &__content {

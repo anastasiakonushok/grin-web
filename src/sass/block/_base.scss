@@ -128,6 +128,15 @@ p {
             background: rgba(189, 189, 189, 0.315) !important;
         }
     }
+    .swiper-nav-hover {
+        @include hover {
+            svg {
+                circle {
+                    fill: rgba(189, 189, 189, 0.315) !important;
+                }
+            }
+        }
+    }
 }
 .body-lock {
     overflow-y: hidden;

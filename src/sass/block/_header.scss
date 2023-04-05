@@ -154,6 +154,7 @@
         gap: 5px;
 
         span {
+            transition: all 0.3s ease;
             background: var(--dark-color);
             display: block;
             height: 3px;
@@ -164,6 +165,7 @@
     .burger-menu-active {
         span:nth-child(1) {
             transform: rotate(45deg);
+            transition: all 0.3s ease;
         }
 
         span:nth-child(2) {
@@ -174,6 +176,7 @@
             transform: rotate(-45deg);
             position: relative;
             top: -7px;
+            transition: all 0.3s ease;
         }
     }
 
@@ -285,7 +288,7 @@
 
 .show {
     display: block !important;
-    height: calc(100vh - 78px);
+    height: calc(100vh - 88px);
 
     .header-bottom__container {
         padding-top: 60px;
