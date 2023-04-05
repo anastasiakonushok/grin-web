@@ -1160,7 +1160,7 @@ p {
 
 .show {
   display: block !important;
-  height: calc(100vh - 78px);
+  height: calc(100vh - 88px);
 }
 
 .show .header-bottom__container {
@@ -2527,6 +2527,16 @@ p {
     background: rgba(189, 189, 189, 0.315) !important;
   }
 
+  .swiper-nav-hover:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-nav-hover:hover svg circle {
+    fill: rgba(189, 189, 189, 0.315) !important;
+  }
+
   .button-up.scroll-top_up {
     position: fixed;
     right: 16px;
@@ -2620,6 +2630,13 @@ p {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .popular-card__box:hover .btn {
+    background: rgba(189, 189, 189, 0.315) !important;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -2789,6 +2806,9 @@ p {
   }
 
   .burger-menu span {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     background: var(--dark-color);
     display: block;
     height: 3px;
@@ -2799,6 +2819,9 @@ p {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .burger-menu-active span:nth-child(2) {
@@ -2811,6 +2834,9 @@ p {
     transform: rotate(-45deg);
     position: relative;
     top: -7px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .nav__item:hover > .sub-menu {
@@ -2859,11 +2885,11 @@ p {
   }
 
   .hero-404 {
-    height: calc(100vh - 78px);
+    height: calc(100vh - 88px);
   }
 
   .hero {
-    height: calc(100vh - 78px);
+    height: calc(100vh - 88px);
   }
 
   .hero .swiper-main__content {
