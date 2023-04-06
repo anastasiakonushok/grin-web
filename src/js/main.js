@@ -125,7 +125,7 @@ const swiper = new Swiper(".swiper-main", {
 });
 const swiperNews = new Swiper(".swiper-news", {
     // Optional parameters
-    loop: true,
+    // loop: true,
     spaceBetween: 16,
     navigation: {
         nextEl: ".swiper-news-next",
@@ -135,9 +135,9 @@ const swiperNews = new Swiper(".swiper-news", {
         el: ".swiper-news-pagination",
         clickable: true,
     },
-    autoplay: {
-        delay: 3000,
-    },
+    // autoplay: {
+    //     delay: 3000,
+    // },
     breakpoints: {
         // when window width is >= 320px
         350: {

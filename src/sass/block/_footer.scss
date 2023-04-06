@@ -113,6 +113,13 @@
 }
 
 @include mq(tablet, min) {
+    .button-up.scroll-top_down {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 1000;
+        transition: all 0.5s ease-in-out;
+    }
     .button-up.scroll-top_up {
         position: fixed;
         right: 16px;
