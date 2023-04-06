@@ -275,7 +275,7 @@ table {
 }
 
 .section-link-info {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .section-link-info__list {
@@ -312,7 +312,7 @@ table {
 }
 
 .documentation {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .certificates {
@@ -2547,6 +2547,16 @@ p {
 
   .swiper-nav-hover:hover svg circle {
     fill: rgba(189, 189, 189, 0.315) !important;
+  }
+
+  .button-up.scroll-top_down {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1000;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .button-up.scroll-top_up {
