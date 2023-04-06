@@ -332,6 +332,11 @@
                 background: rgba(189, 189, 189, 0.315) !important;
                 transition: all 0.3s ease;
             }
+            .popular-card__img {
+                &::after {
+                    backdrop-filter: blur(0.5px);
+                }
+            }
         }
     }
 

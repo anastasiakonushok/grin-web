@@ -14,10 +14,10 @@
             align-items: center;
             margin-bottom: 16px;
             gap: 10px;
+            color: var(--white-color);
 
             .text {
                 font-family: var(--title-font);
-                color: var(--white-color);
                 font-size: 18px;
                 line-height: 110%;
             }
@@ -28,10 +28,10 @@
             margin-bottom: 16px;
             gap: 10px;
             margin-top: 25px;
+            color: var(--white-color);
 
             .text {
                 font-family: var(--title-font);
-                color: var(--white-color);
                 font-size: 18px;
                 line-height: 110%;
             }
@@ -119,5 +119,23 @@
         bottom: 16px;
         z-index: 1000;
         transition: all 0.5s ease-in-out;
+    }
+    .button-up {
+        @include hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    }
+    .footer {
+        a {
+            @include hover {
+                color: rgb(168, 188, 255);
+                svg {
+                    path {
+                        fill:rgb(168, 188, 255) ;
+                    }
+                }
+            }
+        }
     }
 }

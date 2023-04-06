@@ -4,6 +4,7 @@
         gap: 60px;
         padding: 30px 0;
         .tariff-box {
+            padding: 30px 20px;
             width: calc(50% - 30px);
             box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
             &__btn {
@@ -22,7 +23,7 @@
     h2 {
         @include h2;
         color: var(--dark-color);
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     &__grid {
         display: grid;

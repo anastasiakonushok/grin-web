@@ -229,6 +229,35 @@
 }
 
 @include mq(tablet-wide, min) {
+    // .header-top {
+    //     &__phone,
+    //     &__email {
+    //         @include hover {
+    //             a {
+    //                 color: var(--footer-bg);
+    //             }
+
+    //             svg {
+    //                 path {
+    //                     fill: var(--footer-bg);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .header-bottom {
+        &__personal {
+            @include hover {
+                color: var(--footer-bg);
+
+                svg {
+                    path {
+                        fill: var(--footer-bg);
+                    }
+                }
+            }
+        }
+    }
     .header_down {
         top: -200px;
     }
@@ -269,7 +298,7 @@
     .header-bottom {
         .nav {
             &__link {
-                padding-bottom: 80px;
+                padding-bottom: 30px;
             }
             &__link:hover {
                 color: var(--main-blue);

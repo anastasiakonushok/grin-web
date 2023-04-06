@@ -1,150 +1,163 @@
 .section-plus {
-  background: #fff;
-  padding: 60px 0px;
+    background: #fff;
+    padding: 60px 0px;
 
-  &__grid {
-    gap: 120px;
-  }
-
-  &__box {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    img {
-      width: 85px;
-      height: 85px;
-      object-fit: contain;
+    &__grid {
+        gap: 120px;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 110%;
-      font-weight: 600;
-      color: var(--dark-color);
-      text-align: center;
+    &__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 85px;
+            height: 85px;
+            object-fit: contain;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 110%;
+            font-weight: 600;
+            color: var(--dark-color);
+            text-align: center;
+        }
     }
-  }
 }
 
 .section-tariff {
-  padding-top: 80px;
+    padding-top: 80px;
 
-  .container {
-    overflow: hidden;
-  }
+    .container {
+        overflow: hidden;
+    }
 }
 
 .tariff-box {
-  padding: 30px 20px;
-  gap: 60px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+    padding: 60px 20px 30px 20px;
+    gap: 60px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 
-  h3 {
-    @include h3;
-    color: var(--dark-color);
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  &__price {
-    .price {
-      font-family: var(--title-font);
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 110%;
-      color: var(--main-blue);
-      margin-right: 10px;
-    }
-    .value {
-      @include regular;
-      color: var(--dark-color);
-      font-weight: 500;
-    }
-  }
-
-  &__info {
-    .internet {
-      gap: 16px;
-      margin-bottom: 16px;
-
-      .title {
-        @include regular;
+    h3 {
+        @include h3;
         color: var(--dark-color);
-        font-weight: 700;
-        margin-bottom: 5px;
-        font-size: 18px;
-      }
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__popular {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 8px;
+        border-radius: 0px 0px 0px 10px;
+        background: var(--main-blue);
+    }
+    &__price {
+        .price {
+            font-family: var(--title-font);
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 110%;
+            color: var(--main-blue);
+            margin-right: 10px;
+        }
+        .value {
+            @include regular;
+            color: var(--dark-color);
+            font-weight: 500;
+        }
     }
 
-    .tv {
-      gap: 16px;
-      margin-bottom: 16px;
+    &__info {
+        .internet {
+            gap: 16px;
+            margin-bottom: 16px;
 
-      .title {
-        @include regular;
-        color: var(--dark-color);
-        font-weight: 700;
-        margin-bottom: 5px;
-        font-size: 18px;
-      }
+            .title {
+                @include regular;
+                color: var(--dark-color);
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+
+        .tv {
+            gap: 16px;
+            margin-bottom: 16px;
+
+            .title {
+                @include regular;
+                color: var(--dark-color);
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+        }
+
+        a {
+            @include regular;
+            color: var(--main-blue);
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
     }
 
-    a {
-      @include regular;
-      color: var(--main-blue);
-      width: 100%;
-      text-align: center;
-      display: inline-block;
+    &__btn {
+        width: 100%;
+        a {
+            width: 100%;
+            @include button-arrow(
+                #163ba4,
+                var(--white-color),
+                var(--main-blue)
+            );
+        }
     }
-  }
-
-  &__btn {
-    width: 100%;
-    a {
-      width: 100%;
-      @include button-arrow(#163ba4, var(--white-color), var(--main-blue));
-    }
-  }
 }
 
 .swiper-tariff {
-  overflow: initial;
-  padding: 30px 0;
-  &__nav {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  &__slide {
-    position: relative;
-    box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
-  }
-  &__info {
-    h2 {
-      @include h2;
-      color: var(--dark-color);
-      margin-bottom: 10px;
+    overflow: initial;
+    padding: 30px 0;
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 16px;
     }
+    &__slide {
+        position: relative;
+        box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
+    }
+    &__info {
+        h2 {
+            @include h2;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
 
-    .swiper-tariff-prev,
-    .swiper-tariff-next {
-      cursor: pointer;
+        .swiper-tariff-prev,
+        .swiper-tariff-next {
+            cursor: pointer;
+        }
+        justify-content: space-between;
     }
-    justify-content: space-between;
-  }
 }
 
 @include mq(tablet-wide, min) {
-  .swiper-tariff {
-    &__slide:hover {
-      box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
-      transform: scale(1.025);
+    .swiper-tariff {
+        &__slide {
+            @include hover {
+                box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
+                transform: scale(1.025);
+            }
+        }
     }
-  }
 }

@@ -358,14 +358,6 @@ table {
   padding: 30px;
 }
 
-.certificates .swiper-certificates__slide:hover {
-  background: var(--main-blue);
-}
-
-.certificates .swiper-certificates__slide:hover p {
-  color: #fff;
-}
-
 .certificates .swiper-certificates__slide p {
   font-size: var(--regular-font);
   line-height: 140%;
@@ -933,11 +925,11 @@ p {
   align-items: center;
   margin-bottom: 16px;
   gap: 10px;
+  color: var(--white-color);
 }
 
 .footer .contact__phone .text {
   font: 18px/110% var(--title-font);
-  color: var(--white-color);
 }
 
 .footer .contact__email {
@@ -947,11 +939,11 @@ p {
   margin-bottom: 16px;
   gap: 10px;
   margin-top: 25px;
+  color: var(--white-color);
 }
 
 .footer .contact__email .text {
   font: 18px/110% var(--title-font);
-  color: var(--white-color);
 }
 
 .footer .contact-2 {
@@ -1814,7 +1806,7 @@ p {
 }
 
 .tariff-box {
-  padding: 30px 20px;
+  padding: 60px 20px 30px 20px;
   gap: 60px;
   background: #fff;
   display: -webkit-box;
@@ -1840,6 +1832,15 @@ p {
   color: var(--dark-color);
   margin-bottom: 30px;
   text-align: center;
+}
+
+.tariff-box__popular {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px;
+  border-radius: 0px 0px 0px 10px;
+  background: var(--main-blue);
 }
 
 .tariff-box__price .price {
@@ -2454,6 +2455,7 @@ p {
 }
 
 .main-tv .section-tv .tariff-box {
+  padding: 30px 20px;
   width: calc(50% - 30px);
   -webkit-box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
   box-shadow: 2px -1px 13px 6px rgba(190, 188, 188, 0.22);
@@ -2476,7 +2478,7 @@ p {
   line-height: 110%;
   font-weight: 700;
   color: var(--dark-color);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .setcion-popular-film__grid {
@@ -2527,6 +2529,16 @@ p {
     background: rgba(189, 189, 189, 0.315) !important;
   }
 
+  .hover-link-blue:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .hover-link-blue:hover h3 {
+    color: var(--main-blue) !important;
+  }
+
   .swiper-nav-hover:hover {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2547,12 +2559,55 @@ p {
     transition: all 0.5s ease-in-out;
   }
 
+  .button-up:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+
+  .footer a:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: rgb(168, 188, 255);
+  }
+
+  .footer a:hover svg path {
+    fill: rgb(168, 188, 255);
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
 }
 
 @media only screen and (min-width: 1024px) {
+  .swiper-certificates__slide:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: var(--main-blue);
+  }
+
+  .swiper-certificates__slide:hover p {
+    color: #fff;
+  }
+
+  .header-bottom__personal:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: var(--footer-bg);
+  }
+
+  .header-bottom__personal:hover svg path {
+    fill: var(--footer-bg);
+  }
+
   .header_down {
     top: -200px;
   }
@@ -2595,7 +2650,7 @@ p {
   }
 
   .header-bottom .nav__link {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   .header-bottom .nav__link:hover {
@@ -2642,6 +2697,11 @@ p {
     transition: all 0.3s ease;
   }
 
+  .popular-card__box:hover .popular-card__img::after {
+    -webkit-backdrop-filter: blur(0.5px);
+    backdrop-filter: blur(0.5px);
+  }
+
   .about::before {
     background: url("../img/about-vector.svg") no-repeat center right fixed;
     content: "";
@@ -2673,6 +2733,9 @@ p {
   }
 
   .swiper-tariff__slide:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     -webkit-box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
     box-shadow: 2px -1px 25px 6px rgba(119, 116, 116, 0.281);
     -webkit-transform: scale(1.025);
@@ -3040,6 +3103,10 @@ p {
 
   .section-stages__box--arrow {
     display: none;
+  }
+
+  .section-advertising .table {
+    overflow-y: auto;
   }
 
   .main-tv .section-tv {
