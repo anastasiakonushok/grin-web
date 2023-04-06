@@ -24,45 +24,72 @@ block page
                         p Без дополнительных устройств 
                     .flex.section-plus__box
                         img(src="./img/phone-icon.svg" alt="")
-                        p Заявка на подключение по телефону    
+                        p Заявка на подключение по телефону
         section.section-tariff
             .container 
                 .swiper-tariff__info.flex
                     .title
                         h2 Тарифные планы
-                        p Кабельное телевидение 
-                .section-tv
-                    .tariff-box 
-                        .tariff-box__info
-                            h3 Пакет "Оптимальный"
-                            .tv.flex 
-                                span  
-                                    svg(width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                        path(d="M20.5 0H2.5C1.4 0 0.5 0.9 0.5 2V14C0.5 15.1 1.4 16 2.5 16H7.5V18H15.5V16H20.5C21.6 16 22.49 15.1 22.49 14L22.5 2C22.5 0.9 21.6 0 20.5 0ZM20.5 14H2.5V2H20.5V14Z" fill="#163BA4")
-                                span 
-                                    .title более 110 цифровых
-                                    span Интерактивное ТВ
-                            a(href="./all-chanel.html") Список телеканалов
-                        .tariff-box__price 
-                            span.price 8,50
-                            span.value руб./мес.  
-                        .tariff-box__btn 
-                            a(href="") Подключиться        
-                    .tariff-box 
-                        .tariff-box__info
-                            h3 Пакет «Социальный»
-                            .tv.flex 
-                                span  
-                                    svg(width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                        path(d="M20.5 0H2.5C1.4 0 0.5 0.9 0.5 2V14C0.5 15.1 1.4 16 2.5 16H7.5V18H15.5V16H20.5C21.6 16 22.49 15.1 22.49 14L22.5 2C22.5 0.9 21.6 0 20.5 0ZM20.5 14H2.5V2H20.5V14Z" fill="#163BA4")
-                                span 
-                                    .title 11 цифровых каналов
-                            a(href="./all-chanel.html") Список телеканалов
-                        .tariff-box__price 
-                            span.price 1,50
-                            span.value руб./мес.  
-                        .tariff-box__btn 
-                            a(href="") Подключиться                                                 
+                        p Кабельное телевидение
+                    .swiper-tariff__nav
+                        .swiper-tariff-prev.swiper-nav-hover
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" fill="none" transform="rotate(-180 20 20)" stroke="#163BA4")
+                                path(d="M21.7803 25.0303C21.5141 25.2966 21.0974 25.3208 20.8038 25.1029L20.7197 25.0303L16.2197 20.5303C15.9534 20.2641 15.9292 19.8474 16.1471 19.5538L16.2197 19.4697L20.7197 14.9697C21.0126 14.6768 21.4874 14.6768 21.7803 14.9697C22.0466 15.2359 22.0708 15.6526 21.8529 15.9462L21.7803 16.0303L17.8107 20L21.7803 23.9697C22.0732 24.2626 22.0732 24.7374 21.7803 25.0303Z" fill="#163BA4")
+                        .swiper-tariff-next.swiper-nav-hover
+                            svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                circle(cx="20" cy="20" r="19.5" fill="none" stroke="#163BA4")
+                                path(d="M18.2197 14.9697C18.4859 14.7034 18.9026 14.6792 19.1962 14.8971L19.2803 14.9697L23.7803 19.4697C24.0466 19.7359 24.0708 20.1526 23.8529 20.4462L23.7803 20.5303L19.2803 25.0303C18.9874 25.3232 18.5126 25.3232 18.2197 25.0303C17.9534 24.7641 17.9292 24.3474 18.1471 24.0538L18.2197 23.9697L22.1893 20L18.2197 16.0303C17.9268 15.7374 17.9268 15.2626 18.2197 14.9697Z" fill="#163BA4")
+                .swiper.swiper-tariff
+                    .swiper-wrapper.swiper-tariff__wrapp
+                        .swiper-slide.swiper-tariff__slide
+                            .tariff-box 
+                                .tariff-box__info
+                                    h3 Пакет "Оптимальный"
+                                    .tv.flex 
+                                        span  
+                                            svg(width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M20.5 0H2.5C1.4 0 0.5 0.9 0.5 2V14C0.5 15.1 1.4 16 2.5 16H7.5V18H15.5V16H20.5C21.6 16 22.49 15.1 22.49 14L22.5 2C22.5 0.9 21.6 0 20.5 0ZM20.5 14H2.5V2H20.5V14Z" fill="#163BA4")
+                                        span 
+                                            .title более 110 цифровых
+                                    a(href="./all-chanel.html") Список телеканалов
+                                .tariff-box__price 
+                                    span.price 8,50
+                                    span.value руб./мес.  
+                                .tariff-box__btn 
+                                    a(href="") Подключиться             
+                        .swiper-slide.swiper-tariff__slide
+                            .tariff-box 
+                                .tariff-box__info
+                                    h3 Пакет "Социальный"
+                                    .tv.flex 
+                                        span  
+                                            svg(width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M20.5 0H2.5C1.4 0 0.5 0.9 0.5 2V14C0.5 15.1 1.4 16 2.5 16H7.5V18H15.5V16H20.5C21.6 16 22.49 15.1 22.49 14L22.5 2C22.5 0.9 21.6 0 20.5 0ZM20.5 14H2.5V2H20.5V14Z" fill="#163BA4")
+                                        span 
+                                            .title более 11 цифровых
+                                    a(href="./all-chanel.html") Список телеканалов
+                                .tariff-box__price 
+                                    span.price 1,50
+                                    span.value руб./мес.  
+                                .tariff-box__btn 
+                                    a(href="") Подключиться
+                        .swiper-slide.swiper-tariff__slide
+                            .tariff-box 
+                                .tariff-box__info
+                                    h3 Пакет новый
+                                    .tv.flex 
+                                        span  
+                                            svg(width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M20.5 0H2.5C1.4 0 0.5 0.9 0.5 2V14C0.5 15.1 1.4 16 2.5 16H7.5V18H15.5V16H20.5C21.6 16 22.49 15.1 22.49 14L22.5 2C22.5 0.9 21.6 0 20.5 0ZM20.5 14H2.5V2H20.5V14Z" fill="#163BA4")
+                                        span 
+                                            .title более 11 цифровых
+                                    a(href="./all-chanel.html") Список телеканалов
+                                .tariff-box__price 
+                                    span.price 4,00
+                                    span.value руб./мес.  
+                                .tariff-box__btn 
+                                    a(href="") Подключиться                                                        
         include chunk/discount
         section.setcion-popular-film.m-b-80
             .container 
